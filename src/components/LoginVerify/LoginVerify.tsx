@@ -3,7 +3,7 @@ import { Row, Col, Form, Icon } from 'antd';
 import { LoginVerifyWrap, ResendCode, ButtonVerify } from './styled';
 import Heading from '../Heading/Heading';
 import { FormInput } from '../Elements';
-import { get, every } from 'lodash-es';
+import { get, every } from 'lodash';
 import { FormikProps } from 'formik';
 import { LoginFormValues } from '../LoginForm/LoginForm';
 import { SubHeading } from '../LoginForm/styled';
