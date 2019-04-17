@@ -2,7 +2,7 @@ import React, { PureComponent, createRef } from 'react';
 import { Field, FieldProps } from 'formik';
 import { Form, Checkbox, Select, InputNumber } from 'antd';
 import { Input, Password } from '../../Input';
-import { isFunction } from 'lodash-es';
+import { isFunction } from 'lodash';
 
 interface InputProps {
   type: InputType;
@@ -41,23 +41,14 @@ class FormInput extends PureComponent<InputProps, {}> {
   }
 
   private renderInputText = (props: CustomProps): React.ReactNode => {
-    const {
-      field,
-      form,
-      ref,
-      ...restProps
-    } = props;
+    const { field, form, ref, ...restProps } = props;
     const { touched, errors } = form;
     const errorMsg = touched[field.name] && errors[field.name];
     const InputComponent = restProps.type === 'password' ? Password : Input;
 
     return (
       <Form.Item validateStatus={errorMsg ? 'error' : ''} help={errorMsg || ''}>
-        <InputComponent
-          ref={this.myInput}
-          {...field}
-          {...restProps}
-        />
+        <InputComponent ref={this.myInput} {...field} {...restProps} />
       </Form.Item>
     );
   }
