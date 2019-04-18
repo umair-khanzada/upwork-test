@@ -13,6 +13,7 @@
     "@types/node": "11.11.4",
     "@types/react": "16.8.8",
     "@types/react-dom": "16.8.3",
+    "@types/webpack-env": "^1.13.9",
     "antd": "^3.15.2",
     "axios": "^0.18.0",
     "chai": "^4.2.0",
@@ -40,6 +41,11 @@
     "typescript": "^3.3.4000",
     "yup": "^0.27.0"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -62,7 +68,6 @@
     "@types/react-router-dom": "^4.3.1",
     "@types/redux-logger": "^3.0.7",
     "@types/styled-components": "^4.1.12",
-    "@types/webpack-env": "^1.13.9",
     "@types/yup": "^0.26.12",
     "@typescript-eslint/eslint-plugin": "^1.5.0",
     "@typescript-eslint/parser": "^1.5.0",

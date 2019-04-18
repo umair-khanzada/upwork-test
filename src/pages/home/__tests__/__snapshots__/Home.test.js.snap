@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent should render HomePage 1`] = `
+<styled__HomePage
+  select="true"
+>
+  <Adapter>
+    <Heading
+      className="subHeading"
+      level={2}
+      titleText="Hi John we missed you."
+    />
+    <styled__HomeDesc>
+      Click the plus button to start your advice
+    </styled__HomeDesc>
+    <styled__ButtonModalFixed
+      shape="circle"
+      size="large"
+      type="primary"
+    >
+      <Icon
+        type="plus"
+      />
+    </styled__ButtonModalFixed>
+  </Adapter>
+</styled__HomePage>
+`;
