@@ -2,7 +2,7 @@ import React, { PureComponent, createRef } from 'react';
 import { Field, FieldProps } from 'formik';
 import { Form, Checkbox, Select, InputNumber } from 'antd';
 import { Input, Password } from '../../Input';
-import { isFunction } from 'lodash-es';
+import { isFunction } from 'lodash';
 
 interface InputProps {
   type: InputType;

@@ -1,6 +1,6 @@
 import { all, takeLatest, call, put, select } from 'redux-saga/effects';
 import { AxiosResponse } from 'axios';
-import { get, isFunction } from 'lodash-es';
+import { get, isFunction } from 'lodash';
 
 import { AuthActionTypes, LoginPayload, CheckEmailPayload, OTPPayload, AuthActions } from '../../reducers/auth';
 import AuthService from './authService';

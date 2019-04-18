@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputWrapper, InputLogin, InputLabel } from './styled';
 import { FormikHandlers } from 'formik';
-import { isFunction } from 'lodash-es';
+import { isFunction } from 'lodash';
 
 interface InputProps {
   name: string;

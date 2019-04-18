@@ -1,7 +1,7 @@
 import styled, { StyledComponent, StyledFunction, css } from 'styled-components';
 import { Menu, Button, Layout  } from 'antd';
 const { Sider } = Layout;
-import { get } from 'lodash-es';
+import { get } from 'lodash';
 
 const SubMenu = Menu.SubMenu;
 export const ClientInfo = styled.div.attrs({

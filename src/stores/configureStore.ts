@@ -15,7 +15,9 @@ const bindMiddleware = (middleware: any) => {
     const composeEnhancers = composeWithDevTools({
       // Specify name here, actionsBlacklist, actionsCreators
     });
-    return composeEnhancers(applyMiddleware(...middleware, logger));
+    return process.env.NODE_ENV !== 'test' ?
+        composeEnhancers(applyMiddleware(...middleware)) :
+        composeEnhancers(applyMiddleware(...middleware, logger));
   }
   return applyMiddleware(...middleware);
 };
